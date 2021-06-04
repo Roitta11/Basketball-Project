@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(final.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Courier New', Courier, monospace;
+}
+.container{
+    width: 88%;
+    margin: 88px auto;
+}
+.container h1{
+    padding: 30px 0;
+    color: black;
+    font-size: 44px;
+    text-align: center;
+    /* font-family: 'Montserrat'; */
+    color:#FDFFFC;
+}
+
+
+h3{
+    padding: 30px 0;
+    color:#FDFFFC;
+    font-size: 24px;
+    text-align: center;
+    /* font-family: 'Odibee-Sans','sans-serif'; */
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    /* font-family: 'Odibee-Sans'; */
+    color:#FDFFFC;
+}
+a{
+    font-size: 15px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    min-width: 250px;    
+}
+
+/* Cover image design for the tutorials */
+.feature-img{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width:85%;
+}
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width:150px;
+}
+.small-img-row p{
+    margin-left: 20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+/* Design of the buttons */
+.play-btn{
+    position:absolute;
+    width:60px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); 
+    cursor: pointer;
+}
+.small-img .play-btn{
+    width:35px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:30px;
+    cursor: pointer;;
+}
+
+
+.video-player{
+    width:80%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); 
+    cursor: pointer;
+    display: none;
+}
+video:focus{
+    outline: none;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basketball Project</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ILOVEBASKETBALL TV Tutorials!</h1>
+
+        <a href="https://www.youtube.com/user/ILoveBasketballTV"><h3>Follow our channel on YouTube to build up your basketball skills</h3></a>
+        
+        <p>In this page you will find some of the fundamental workouts that are required to take your game to the next level.
+        Smash the play button on the right and get ready to level up yourself up!!</p>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="download.jpg" width="100%">   
+                </div>
+            </div>
+
+            <!-- Tutorials List  -->
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="shooting.jpg">
+                        <img src="play.png" class="play-btn"  onclick="playVideo('shooting.mp4')">
+                    </div>
+                    <p><strong>Shooting Workout:</strong> In this workout you will be trained how to fix your shooting form from the beginner's level to increasing your shooting consistency in the advanced.</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Dribbling.png">
+                        <img src="play.png" class="play-btn"  onclick="playVideo('dribling.mp4')">
+                    </div>
+                    <p><strong>Dribbling Workout:</strong> Here in this video you will be starting with the basics in order to develop the foundation of your dribbling. Follow along the video to turbo charge your handles and snatch ankles! </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="verticaljump.jpg">
+                        <img src="play.png" class="play-btn"  onclick="playVideo('Vertical Jump.mp4')">
+                    </div>
+                    <p><strong>Vertical Jump Workout:</strong> Ever wondered of jumping so high and dunk even if you are below 6ft? Well this video shows you some great exercises to enhance your vertical jump and at the end of the video your are going to be jumping at least 4-5 inches higher!!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Adding the videos to the specific tutorial -->
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="videoplayback.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <!-- Linking our html document with the script -->
+    <script src='script.js'></script>
+
+
+    
+</body>
+</html>
